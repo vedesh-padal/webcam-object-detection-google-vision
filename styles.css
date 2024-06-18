@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+#video {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#snap {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#snap:hover {
+  background-color: #218838;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.image-section h2 {
+  margin-bottom: 10px;
+}
+
+.image-section img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

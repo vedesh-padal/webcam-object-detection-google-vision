@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Capture and Labeling</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Capture Photo</h1>
+      <div class="video-container">
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="snap">Capture</button>
+      </div>
+      <canvas
+        id="canvas"
+        width="640"
+        height="480"
+        style="display: none"
+      ></canvas>
+      <div class="images-container">
+        <div class="image-section">
+          <h2>Original Image</h2>
+          <img id="originalImage" src="" alt="Original Image" style="display: none" />
+        </div>
+        <div class="image-section">
+          <h2>Labeled Image</h2>
+          <img
+            id="labeledImage"
+            src=""
+            alt="Labeled Image"
+            style="display: none"
+          />
+        </div>
+      </div>
+      <p id="output"></p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
